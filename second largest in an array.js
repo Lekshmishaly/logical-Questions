@@ -13,9 +13,16 @@ function test(number){
 },[-Infinity,-Infinity])    
 };
 
-const result=(test(num))
 
-console.log({
-    Largest:result[1],
-    SecondLargest:result[0],
-})
+[largeNum,secLarge]=(test(num));
+console.log(" Second Number:",largeNum);
+console.log("largest Number:",secLarge);
+
+        //or
+
+// const result=(test(num))
+
+// console.log({
+//     Largest:result[1],
+//     SecondLargest:result[0],
+// })
