@@ -5,7 +5,6 @@ let x={
          d:[2,3,4,5],
      }
 }
-
 function findSum(obj){
     let sum = 0;
     for(let key in obj){
@@ -13,7 +12,7 @@ function findSum(obj){
             sum = sum+obj[key];
         }else if(Array.isArray(obj[key])){
             obj[key].forEach((el)=>{
-                sum = sum+el;
+            sum = sum+el;
             })
         }else if(typeof obj[key] == "object"){
             sum = sum + findSum(obj[key]);
