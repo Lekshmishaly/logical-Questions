@@ -16,6 +16,6 @@ function test(number){
 const result=(test(num))
 
 console.log({
-    SecondLargest:result[0],
     Largest:result[1],
+    SecondLargest:result[0],
 })
